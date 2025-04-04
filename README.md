@@ -87,7 +87,10 @@ Steps:-
  
  now run :- python template.py 
 
- 
+
+2.) use mlops tools:-  evidently ai to detect data drift 
+
+
 
 
 
