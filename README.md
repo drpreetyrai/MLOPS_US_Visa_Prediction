@@ -84,7 +84,10 @@ We will be using ML
 Steps:- 
 
 1.) First create template.py 
+ 
+ now run :- python template.py 
 
+ 
 
 
 
