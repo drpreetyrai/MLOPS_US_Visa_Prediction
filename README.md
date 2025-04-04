@@ -1,7 +1,9 @@
 
 ![alt text](thumbnail.png)
 
-![alt text](thumbnail2.png)
+
+
+![alt text](tumbnail2.png)
 
 US Visa Approval Prediction 
 
