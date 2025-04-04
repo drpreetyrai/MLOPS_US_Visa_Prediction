@@ -1,4 +1,5 @@
 
+<img src="/Users/preetyrai/Desktop/MLOPS_US_VISA_Prediction/Screenshot 2025-04-04 at 8.42.51 PM.png" alt="Alt Text" width="full">
 
 US Visa Approval Prediction 
 
@@ -18,6 +19,7 @@ Deployment:
  * Cloud Services 
  * Adding self hosted runner 
  * workflows 
+
 
 
 Problme Statement:
@@ -78,7 +80,9 @@ We will be using ML
 
 
 
+Steps:- 
 
+1.) First create template.py 
 
 
 
