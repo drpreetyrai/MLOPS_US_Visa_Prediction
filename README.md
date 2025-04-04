@@ -1,5 +1,6 @@
 
-<img src="/Users/preetyrai/Desktop/MLOPS_US_VISA_Prediction/Screenshot 2025-04-04 at 8.42.51 PM.png" alt="Alt Text" width="full">
+![alt text](thumbnail.png)
+
 
 US Visa Approval Prediction 
 
