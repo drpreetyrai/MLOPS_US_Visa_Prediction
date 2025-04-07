@@ -16,6 +16,7 @@ Project Overview:
 
  * Understanding the Deployment 
 
+## Used Evidently AI for data drift detection 
 
 
 Deployment:
@@ -26,72 +27,72 @@ Deployment:
 
 
 
-Problme Statement:
+# Problme Statement:
 
-US visa approval status
+## US visa approval status
 
 Given certain set of features such as (continent, education, job_experience, training, employment, current age etc .) 
 
-We have to predict weather the application for the visa will be approved or not. 
+ * We have to predict weather the application for the visa will be approved or not. 
 
 
 
-Features:
-Continent: Asia, Africa, North America, Europe, South America, Oceania 
+## Features:
+ * Continent: Asia, Africa, North America, Europe, South America, Oceania 
 
-Education: High Scool, Master's Degree, Bachelor's, Doctorate 
+ * Education: High Scool, Master's Degree, Bachelor's, Doctorate 
 
-Job Experience: Yes, No
+ * Job Experience: Yes, No
 
-Required Training: Yes, No 
-Number of employess: 15000 to 40000 
-Region of employment: West, Northeast, South, Midwest, Island,
+ * Required Training: Yes, No 
+ * Number of employess: 15000 to 40000 
+ * Region of employment: West, Northeast, South, Midwest, Island,
 
-Prevailing Wage: 700 to 70000 
+ * Prevailing Wage: 700 to 70000 
 
-Contract Tenure: Hour, Year, Week, Month 
+ * Contract Tenure: Hour, Year, Week, Month 
 
-Full time : Yes, No
+ * Full time : Yes, No
 
-Age of company: 15 to 180 
+ * Age of company: 15 to 180 
 
 
 
-Soluteion Scope:
+# Soluteion Scope:
 This can be used on real life by US visa applicants so that they can improve their Resume and criteria for the approval process. 
 
 
-Solution Approach:
+# Solution Approach:
 
-1.) Machine Learning: ML Classification Algorithms 
+*  Machine Learning: ML Classification Algorithms 
 
-2.) Deep Learning: Custom ANN with sigmoid activation Function 
+*  Deep Learning: Custom ANN with sigmoid activation Function 
 
 
 
 # Solution Proposed 
 
 We will be using ML
-1.) Load the data from DB
-2.) Perform EDA and feature engineering to select the desirable features. 
-3.) Fit the ML classification Algorithm and find out which one performs better. 
+*  Load the data from DB
+* Perform EDA and feature engineering to select the desirable features. 
+* Fit the ML classification Algorithm and find out which one performs better. 
 
-4.) Select top few and tune hyperparameters.
+* Select top few and tune hyperparameters.
 
-5.) Select the bet model based on desired metrics.
-
-
+* Select the bet model based on desired metrics.
 
 
 
-Steps:- 
 
-1.) First create template.py 
+
+# Steps:- 
+
+* First create template.py 
  
  now run :- python template.py 
 
 
-2.) use mlops tools:-  evidently ai to detect data drift 
+* use mlops tools:-  evidently ai to detect data drift 
 
 
 ## Git commands
