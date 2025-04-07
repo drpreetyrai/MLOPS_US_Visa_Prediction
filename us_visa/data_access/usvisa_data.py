@@ -7,7 +7,6 @@ from typing import Optional
 import numpy as np
 
 
-
 class USvisaData:
     """
     This class help to export entire mongo db record as pandas dataframe

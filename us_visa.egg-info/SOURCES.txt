@@ -5,6 +5,8 @@ us_visa.egg-info/PKG-INFO
 us_visa.egg-info/SOURCES.txt
 us_visa.egg-info/dependency_links.txt
 us_visa.egg-info/top_level.txt
+us_visa/cloud_storage/__init__.py
+us_visa/cloud_storage/aws_storage.py
 us_visa/components/__init__.py
 us_visa/components/data_ingestion.py
 us_visa/components/data_transformation.py
@@ -12,6 +14,8 @@ us_visa/components/data_validation.py
 us_visa/components/model_evaluation.py
 us_visa/components/model_pusher.py
 us_visa/components/model_trainer.py
+us_visa/components/test_early_data_ingestion/__init__.py
+us_visa/components/test_early_data_ingestion/test_early_initiate_data_ingestion.py
 us_visa/configuration/__init__.py
 us_visa/configuration/aws_connection.py
 us_visa/configuration/mongo_db_connection.py
