@@ -4,6 +4,8 @@ import sys
 import pandas as pd
 from evidently.model_profile import Profile
 from evidently.model_profile.sections import DataDriftProfileSection
+from evidently.report import Report
+from evidently.metric_preset import DataDriftPreset
 
 from evidently.report import Report
 from evidently.metric_preset import DataDriftPreset
@@ -112,7 +114,7 @@ class DataValidation:
 
             report11 = report.json() 
             json_report = json.loads(report11)
-            print(json_report)
+            # print(json_report)
 
             write_yaml_file(file_path=self.data_validation_config.drift_report_file_path, content=json_report)
 
