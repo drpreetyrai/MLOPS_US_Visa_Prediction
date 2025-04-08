@@ -120,6 +120,12 @@ pip install -r requirements.txt
 ```
 
 
+```bash
+
+Model evaluation and model pusher will be executed together 
+
+```
+
 
 ## Workflow:
 
