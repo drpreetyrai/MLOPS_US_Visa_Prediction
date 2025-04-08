@@ -7,6 +7,15 @@ from us_visa.entity.artifact_entity import ModelPusherArtifact, ModelEvaluationA
 from us_visa.entity.config_entity import ModelPusherConfig
 from us_visa.entity.s3_estimator import USvisaEstimator
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+groq_api_key=os.environ.get('GROQ_API_KEY')
+
+
+
 
 class ModelPusher:
     def __init__(self, model_evaluation_artifact: ModelEvaluationArtifact,
@@ -18,8 +27,8 @@ class ModelPusher:
         self.s3 = SimpleStorageService()
         self.model_evaluation_artifact = model_evaluation_artifact
         self.model_pusher_config = model_pusher_config
-        self.usvisa_estimator = USvisaEstimator(bucket_name=model_pusher_config.bucket_name,
-                                model_path=model_pusher_config.s3_model_key_path)
+        self.usvisa_estimator = USvisaEstimator(bucket_name=os.environ.get("usvisa-model20259"),
+                                model_path=os.environ.get("AWS_PATH")) 
 
     def initiate_model_pusher(self) -> ModelPusherArtifact:
         """
@@ -37,8 +46,8 @@ class ModelPusher:
             self.usvisa_estimator.save_model(from_file=self.model_evaluation_artifact.trained_model_path)
 
 
-            model_pusher_artifact = ModelPusherArtifact(bucket_name=self.model_pusher_config.bucket_name,
-                                                        s3_model_path=self.model_pusher_config.s3_model_key_path)
+            model_pusher_artifact = ModelPusherArtifact(bucket_name=os.environ.get("usvisa-model20259"),
+                                                        s3_model_path=os.environ.get("AWS_PATH"))
 
             logging.info("Uploaded artifacts folder to s3 bucket")
             logging.info(f"Model pusher artifact: [{model_pusher_artifact}]")
