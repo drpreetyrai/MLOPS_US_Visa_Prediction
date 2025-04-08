@@ -11,6 +11,11 @@ from us_visa.entity.s3_estimator import USvisaEstimator
 from dataclasses import dataclass
 from us_visa.entity.estimator import USvisaModel
 from us_visa.entity.estimator import TargetValueMapping
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 
 @dataclass
 class EvaluateModelResponse:
@@ -40,8 +45,9 @@ class ModelEvaluation:
         On Failure  :   Write an exception log and then raise an exception
         """
         try:
-            bucket_name = self.model_eval_config.bucket_name
-            model_path=self.model_eval_config.s3_model_key_path
+            bucket_name = "usvisa-model20259"
+            model_path= groq_api_key=os.environ.get('AWS_ACCESS_KEY_ID_ENV_KEY')
+
             usvisa_estimator = USvisaEstimator(bucket_name=bucket_name,
                                                model_path=model_path)
 
@@ -100,7 +106,7 @@ class ModelEvaluation:
         """  
         try:
             evaluate_model_response = self.evaluate_model()
-            s3_model_path = self.model_eval_config.s3_model_key_path
+            s3_model_path = os.environ.get('AWS_ACCESS_KEY_ID_ENV_KEY')
 
             model_evaluation_artifact = ModelEvaluationArtifact(
                 is_model_accepted=evaluate_model_response.is_model_accepted,
